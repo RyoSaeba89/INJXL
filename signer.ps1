@@ -5,10 +5,10 @@
 # A relancer apres CHAQUE recompilation : PyInstaller reecrit l'exe et la
 # signature precedente disparait. build_exe.bat l'appelle automatiquement.
 #
-# POURQUOI LE CERTIFICAT « XLDiff » PAR DEFAUT. C'est celui qui signe deja
-# CONDA : sa cle publique est donc deja installee la ou ces outils tournent,
-# alors qu'un certificat propre a INJXL demanderait une installation de plus
-# avant que la moindre machine lui fasse confiance.
+# POURQUOI CE CERTIFICAT PAR DEFAUT. C'est celui qui signe deja les autres
+# outils : sa cle publique est donc deja installee la ou ils tournent, alors
+# qu'un certificat propre a INJXL demanderait une installation de plus avant
+# que la moindre machine lui fasse confiance.
 param(
   [string]$Exe = "$PSScriptRoot\dist\INJXL.exe",
   # empreinte du certificat a utiliser ; a defaut, le premier certificat de
