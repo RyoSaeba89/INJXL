@@ -1,0 +1,51 @@
+{
+  "schema": "injxl/profil/1",
+  "name": "Exemple - cle en colonne A, injection L vers O",
+  "source": {
+    "path": "",
+    "sheet": "",
+    "header_row": 1
+  },
+  "target": {
+    "path": "",
+    "sheet": "",
+    "header_row": 1
+  },
+  "keys": [
+    {
+      "source": { "index": 1, "header": "" },
+      "target": { "index": 1, "header": "" }
+    }
+  ],
+  "injections": [
+    {
+      "source": { "index": 12, "header": "" },
+      "target": { "index": 15, "header": "" },
+      "new_header": "",
+      "mode": "vides",
+      "default": "",
+      "apply_default": false
+    }
+  ],
+  "match": {
+    "ignore_case": true,
+    "trim": true,
+    "collapse_spaces": true,
+    "ignore_accents": false,
+    "ignore_separators": false,
+    "ignore_leading_zeros": false,
+    "numeric_keys": true,
+    "on_duplicate": "ignorer"
+  },
+  "output": {
+    "mode": "copie",
+    "path": "",
+    "backup": true,
+    "highlight": true,
+    "highlight_color": "FFC6EFCE",
+    "report_txt": true,
+    "report_xlsx": false,
+    "open_after": false
+  },
+  "remember_paths": false
+}

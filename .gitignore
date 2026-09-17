@@ -1,0 +1,30 @@
+# --- Donnees reelles : ne JAMAIS publier ---
+# INJXL travaille sur des classeurs de gestion (familles, agents, tarifs).
+# Un classeur commite resterait dans l'historique meme apres un git rm.
+*.xlsx
+*.xlsm
+*.xls
+*.csv
+*.tsv
+!profils/*.json
+
+# --- Sorties produites par l'outil ---
+*_INJXL_*.xlsx
+*_RAPPORT_*.txt
+*_RAPPORT_*.xlsx
+*_SAUVEGARDE_*.xlsx
+
+# --- Artefacts de compilation ---
+# « dist/* » et non « dist/ » : git ne sait pas re-inclure un fichier dont le
+# dossier parent est exclu, et l'exe signe, lui, doit etre versionne — c'est
+# lui que la release propose au telechargement.
+dist/*
+!dist/INJXL.exe
+build/
+*.spec
+__pycache__/
+*.pyc
+
+# --- Divers ---
+~$*
+*.tmp

@@ -1,0 +1,21 @@
+# Binaires : jamais convertis. L'exécutable de bureau est SIGNÉ — la moindre
+# conversion de fins de ligne invaliderait sa signature, et le certificat
+# comme les captures d'écran ne survivraient pas davantage.
+*.exe binary
+*.cer binary
+*.ico binary
+*.png binary
+*.jpg binary
+*.docx binary
+*.xlsx binary
+*.xlsm binary
+
+# Sources et scripts multiplateformes : LF, quelle que soit la configuration
+# du poste Windows sur lequel ils sont edites.
+*.py text eol=lf
+*.js text eol=lf
+*.yml text eol=lf
+
+# Scripts lancés par Windows : CRLF, sinon cmd.exe et PowerShell trébuchent.
+*.bat text eol=crlf
+*.ps1 text eol=crlf
